@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34DCA299-B801-4BE7-935C-7873AB9F2C58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MaizeMaze.My.MyApplication</StartupObject>
+    <RootNamespace>MaizeMaze</RootNamespace>
+    <AssemblyName>Unit 15 Game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Unit 15 Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Unit 15 Game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmFAQ.Designer.vb">
+      <DependentUpon>frmFAQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFAQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFailed.Designer.vb">
+      <DependentUpon>frmFailed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFailed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevels.Designer.vb">
+      <DependentUpon>frmLevels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWin.Designer.vb">
+      <DependentUpon>frmWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item.vb" />
+    <Compile Include="lblBoundaries.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyEnemy.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyHealth.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyPlayer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MySuperClass.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucInventory.Designer.vb">
+      <DependentUpon>ucInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucInventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFAQ.resx">
+      <DependentUpon>frmFAQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFailed.resx">
+      <DependentUpon>frmFailed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevels.resx">
+      <DependentUpon>frmLevels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWin.resx">
+      <DependentUpon>frmWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInventory.resx">
+      <DependentUpon>ucInventory.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogBowl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmMenuBG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HappyRoomba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JunkFood - 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaFront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SadRoomba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundV3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrontRoomba_Hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackRoomba_Hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaLeft_Hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaRight_Hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoombaRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackRoombaV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugger.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugger2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
